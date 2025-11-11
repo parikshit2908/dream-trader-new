@@ -1,0 +1,257 @@
+/* ===============================
+   DREAM TRADERS — HOME PAGE STYLE
+   =============================== */
+
+   .home-container {
+    font-family: "Inter", sans-serif;
+    background: var(--surface, #0b0f19);
+    color: var(--text-primary, #fff);
+    transition: all 0.3s ease;
+  }
+  
+  /* ☀️ Light Mode */
+  body[data-theme="light"] .home-container {
+    background: #f9fafc;
+    color: #111;
+  }
+  
+  /* ============================
+     HERO SECTION
+     ============================ */
+  .hero-section {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: radial-gradient(circle at top left, #02143f, #00101f);
+    padding: 3rem 2rem;
+  }
+  
+  body[data-theme="light"] .hero-section {
+    background: linear-gradient(to bottom, #ffffff, #e6f7ff);
+  }
+  
+  .hero-content {
+    max-width: 800px;
+  }
+  
+  .hero-logo {
+    height: 100px;
+    width: auto;
+    margin-bottom: 1.5rem;
+    filter: drop-shadow(0 0 10px rgba(0, 191, 255, 0.6));
+  }
+  
+  .hero-title {
+    font-size: 2.6rem;
+    font-weight: 800;
+    margin-bottom: 0.8rem;
+    letter-spacing: 1px;
+  }
+  
+  .hero-title span {
+    background: linear-gradient(90deg, #00bfff, #00e0ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem;
+    color: var(--text-secondary, #bbb);
+    margin-bottom: 2rem;
+  }
+  
+  .hero-btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #007bff, #00c4ff);
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .hero-btn:hover {
+    background: linear-gradient(135deg, #0066cc, #00aaff);
+    transform: translateY(-3px);
+  }
+  
+  /* ============================
+     COURSES SECTION
+     ============================ */
+  .courses-section {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(90deg, #00bfff, #00e0ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+  }
+  
+  .section-subtitle {
+    font-size: 1rem;
+    color: var(--text-secondary, #bbb);
+    margin-bottom: 2.5rem;
+  }
+  
+  .courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .course-card {
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    padding: 1.5rem;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  body[data-theme="light"] .course-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .course-card:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(135deg, #00bfff, #00e0ff);
+    color: #000;
+  }
+  
+  .course-icon {
+    font-size: 1.8rem;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* ============================
+     WHY CHOOSE SECTION
+     ============================ */
+  .why-section {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .why-list {
+    list-style: none;
+    padding: 0;
+    max-width: 700px;
+    margin: 2rem auto 0;
+    text-align: left;
+  }
+  
+  .why-list li {
+    font-size: 1.05rem;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 1.5rem;
+  }
+  
+  .why-list li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #00bfff;
+  }
+  
+  /* ============================
+     INSTAGRAM / SOCIAL SECTION
+     ============================ */
+  .social-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.03);
+  }
+  
+  body[data-theme="light"] .social-section {
+    background: #f1f5f9;
+  }
+  
+  .qr-image {
+    height: 160px;
+    width: auto;
+    border-radius: 16px;
+    margin: 1rem 0;
+    box-shadow: 0 4px 20px rgba(0, 191, 255, 0.3);
+  }
+  
+  .qr-handle {
+    font-weight: 700;
+    color: #00bfff;
+    font-size: 1.1rem;
+  }
+  /* Fade In Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+  }
+  
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* CTA Section */
+  .cta-section {
+    text-align: center;
+    padding: 5rem 2rem;
+    background: linear-gradient(135deg, #00bfff, #00e0ff);
+    color: #fff;
+  }
+  
+  .cta-title {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+  }
+  
+  .cta-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-btn {
+    background: #0b0f19;
+    color: #00e0ff;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.3s ease;
+  }
+  
+  .cta-btn:hover {
+    background: #fff;
+    color: #007bff;
+  }
+  
+  /* Follow Button */
+  .follow-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    background: linear-gradient(135deg, #007bff, #00c4ff);
+    color: white;
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 0.7rem 1.5rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .follow-btn:hover {
+    background: linear-gradient(135deg, #0066cc, #00aaff);
+    transform: translateY(-3px);
+  }
+  

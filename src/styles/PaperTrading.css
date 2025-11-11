@@ -1,0 +1,74 @@
+.paper-trading-section {
+  margin-top: 3rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.trade-inputs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.trade-inputs input {
+  flex: 1;
+  padding: 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 1rem;
+}
+
+.trade-inputs input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.trade-log {
+  margin-top: 2rem;
+}
+
+.trade-log h3 {
+  color: #00e0ff;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.trade-log p {
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  padding: 1rem;
+}
+
+.buy-btn {
+  background-color: #00c853;
+  border: none;
+  color: white;
+  padding: 0.8rem 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.sell-btn {
+  background-color: #d50000;
+  border: none;
+  color: white;
+  padding: 0.8rem 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.trade-log ul {
+  list-style: none;
+  padding: 0;
+}
+
+.trade-log li {
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 8px;
+  margin-bottom: 0.6rem;
+  padding: 0.8rem;
+  color: #ddd;
+}

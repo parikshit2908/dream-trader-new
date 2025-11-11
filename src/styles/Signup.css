@@ -1,0 +1,146 @@
+/* ===============================
+   Dream Traders Signup Page Styles
+   =============================== */
+
+.signup-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at top left, #0a0f24, #010409);
+  color: var(--text-primary, #fff);
+  font-family: "Poppins", sans-serif;
+}
+
+.signup-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 2.5rem 3rem;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(15px);
+  text-align: center;
+  animation: fadeIn 0.8s ease;
+}
+
+.signup-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  color: var(--text-primary, #fff);
+}
+
+.signup-subtitle {
+  font-size: 0.95rem;
+  color: var(--text-secondary, #bbb);
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  text-align: left;
+  margin-bottom: 1.25rem;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  color: var(--text-secondary, #ccc);
+  margin-bottom: 0.4rem;
+  display: block;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  outline: none;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: var(--primary-color, #3b82f6);
+  box-shadow: 0 0 8px var(--primary-color, #3b82f6);
+}
+
+/* Button */
+.signup-btn {
+  width: 100%;
+  background: var(--primary-color, #3b82f6);
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
+}
+
+.signup-btn:hover {
+  background: #2563eb;
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+  transform: translateY(-2px);
+}
+
+/* Error + Success */
+.error-message,
+.success-message {
+  padding: 0.7rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  animation: fadeIn 0.3s ease;
+}
+
+.error-message {
+  background: rgba(255, 0, 0, 0.1);
+  color: #ff4d4d;
+  border: 1px solid rgba(255, 0, 0, 0.3);
+}
+
+.success-message {
+  background: rgba(0, 255, 0, 0.1);
+  color: #4caf50;
+  border: 1px solid rgba(0, 255, 0, 0.3);
+}
+
+/* Footer */
+.signup-footer {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary, #bbb);
+}
+
+.login-link {
+  color: var(--primary-color, #3b82f6);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+  color: var(--text-primary, #fff);
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 0.7s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

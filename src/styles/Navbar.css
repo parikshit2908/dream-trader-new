@@ -1,0 +1,168 @@
+/* ✅ Navbar Container */
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: rgba(10, 15, 36, 0.9);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  padding: 0.6rem 0;
+  transition: all 0.3s ease;
+}
+
+.navbar-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ✅ Logo & Brand */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo-img {
+  height: 68px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 0 6px rgba(0, 191, 255, 0.4));
+  transition: all 0.3s ease;
+}
+
+.logo-img:hover {
+  filter: drop-shadow(0 0 12px rgba(0, 224, 255, 0.6));
+  transform: scale(1.03);
+}
+
+/* ✅ Brand Name Glow Effect */
+.brand-name {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #00bfff, #00e0ff, #4df3ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 6px rgba(0, 191, 255, 0.4));
+  transition: all 0.3s ease;
+}
+
+.brand-name:hover {
+  filter: drop-shadow(0 0 10px rgba(0, 224, 255, 0.7));
+  transform: scale(1.02);
+}
+
+/* ✅ Navigation Links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-left: auto;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-secondary);
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  color: #00bfff;
+  transform: translateY(-2px);
+}
+
+/* ✅ Right Section */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* 🌓 Theme Button — Perfect Circle */
+.theme-btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(0, 224, 255, 0.3);
+  border-radius: 50%;
+  width: 40px;             /* perfect circle size */
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #00e0ff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 224, 255, 0.2);
+}
+
+.theme-btn:hover {
+  transform: scale(1.15);
+  background: rgba(0, 224, 255, 0.15);
+  box-shadow: 0 0 15px rgba(0, 224, 255, 0.4);
+}
+
+
+/* 🔒 Login Button — Smaller, Balanced */
+.theme-btn {
+  width: 40px;                       /* Fixed width  */
+  height: 40px;                      /* Fixed height = perfect circle */
+  min-width: 40px;                   /* Prevent shrinking */
+  min-height: 40px;
+  aspect-ratio: 1 / 1;               /* Keeps proportions even in flex */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: radial-gradient(circle at center, rgba(0, 224, 255, 0.25), rgba(0, 224, 255, 0.08));
+  border: 2px solid rgba(0, 224, 255, 0.3);
+  color: #00e0ff;
+
+  cursor: pointer;
+  box-shadow: 0 0 12px rgba(0, 224, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.theme-btn:hover {
+  transform: scale(1.15);
+  background: radial-gradient(circle at center, rgba(0, 224, 255, 0.4), rgba(0, 224, 255, 0.15));
+  box-shadow: 0 0 20px rgba(0, 224, 255, 0.6);
+}
+
+
+/* Logged-in user display */
+.user-name {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.08);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 992px) {
+  .nav-links {
+    display: none;
+  }
+
+  .logo-img {
+    height: 52px;
+  }
+
+  .brand-name {
+    font-size: 1.2rem;
+  }
+}
